@@ -1,7 +1,11 @@
 @import "vars"
 @import "video.min.css"
 @import "landingHeader"
-@import "_pages/01"
+@import "_pages/page01"
+@import "_pages/page02"
+@import "_pages/page04"
+@import "_pages/page07"
+@import "_pages/page10"
 @import "landingFooter"
 
 *
@@ -10,3 +14,27 @@
 .landing-topline, .landing-header, .landing-banner, .landing-consult, .landing-footer, .landing-main
 	font-family: Tahoma
 	color: $default-font-color
+
+.landing-main
+	padding-top: 80px
+
+.landing-cat-red
+	display: inline-block
+	width: 12px
+	height: 12px
+	border-radius: 100%
+	background: #e21e26
+	margin-right: 10px
+	border: 1px solid $border-c
+
+.landing-cat-yellow
+	@extend .landing-cat-red
+	background: #f8ec12
+
+.landing-cat-title-center
+	@extend .landing-cat-title
+	text-align: center
+
+.landing-cat-list-megamargin
+	@extend .landing-cat-list
+	margin-bottom: 148px
